@@ -1,13 +1,8 @@
 eureka:
   instance:
-    leaseRenewalIntervalInSeconds: 1
-    leaseExpirationDurationInSeconds: 2
+    hostname: localhost
   client:
     registerWithEureka: true
     fetchRegistry: true
     serviceUrl:
       defaultZone: http://localhost:8760/eureka/
-    healthcheck:
-      enabled: true
-    lease:
-      duration: 5
